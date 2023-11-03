@@ -1,4 +1,10 @@
+<<<<<<< HEAD
 sk App that integrates with AirBnB static HTML Template
+=======
+#!/usr/bin/python3
+"""
+Flask App that integrates with AirBnB static HTML Template
+>>>>>>> c15fbe1d57324d3cb8c2af2b3a2c54ac2bcc028b
 """
 import uuid
 from flask import Flask, render_template, url_for
