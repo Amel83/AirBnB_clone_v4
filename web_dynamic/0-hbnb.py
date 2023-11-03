@@ -2,6 +2,7 @@
 """ Starts a Flash Web Application """
 from models import storage
 from models.state import State
+import uuid
 from models.city import City
 from models.amenity import Amenity
 from models.place import Place
@@ -22,7 +23,7 @@ def close_db(error):
 
 
 @app.route('/0-hbnb/')
-def hbnb(idd=none):
+def hbnb(idd=None):
     """ HBNB is alive! """
    
     state_objs = storage.all('State').values()
@@ -41,4 +42,4 @@ def hbnb(idd=none):
 
 if __name__ == "__main__":
     """ Main Function """
-    app.run(host=hozt, port=port)
+    app.run(host=host, port=port)
